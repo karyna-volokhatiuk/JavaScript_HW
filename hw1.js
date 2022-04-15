@@ -101,3 +101,20 @@ function reverseStringWithSubstring(stringToReverse) {
 
 console.log(reverseStringWithSubstring("testReverseString"))
 console.log(reverseStringWithSubstring("testReverseString1"))
+
+
+// METHOD 8
+const reverseStringWithSplitArrowFunc = (stringToReverse) => stringToReverse.split('').reverse().join('');
+
+console.log(reverseStringWithSplitArrowFunc("testReverseString"))
+console.log(reverseStringWithSplitArrowFunc("testReverseString1"))
+
+
+// METHOD 9
+const reverseStringWithSplitFuncExpr = function(stringToReverse) {
+    return stringToReverse.split('').reverse().join('');
+}
+
+console.log(reverseStringWithSplitFuncExpr("testReverseString"))
+console.log(reverseStringWithSplitFuncExpr("testReverseString1"))
+
